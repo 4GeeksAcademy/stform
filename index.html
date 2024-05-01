@@ -20,73 +20,83 @@
                         </div>
                     </div>
                     <div class="col-6 mb-2">
-                        <label for="card" class="form-label" >Card #</label>
-                        <input type="text" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX">
+                        <label for="card" class="form-label fw-bold" >Card #</label>
+                        <input type="number" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX">
                     </div>
                     <div class="col-2 mb-2">
-                        <label for="code" class="form-label" >CVC #</label>
-                        <input type="text" class="form-control" id="code" placeholder="0000">
+                        <label for="code" class="form-label fw-bold" >CVC #</label>
+                        <input type="number" class="form-control" id="code" placeholder="0000">
                     </div>
-                    <div class="col-4 mb-2">
-                        <label for="price" class="form-label">Amount</label>
-                         <input type="text" class="form-control" id="price" placeholder="Amount">
+                    <div class="col-4 mb-2 d-flex flex-column"> 
+                        <p class="mb-2 fw-bold">Amount</p>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <select class="form-select p-1">
+                                <option selected>$</option>
+                                <option>€</option>
+                                <option>£</option>
+                                </select>
+                            </span>
+                            <input type="number" class="form-control" id="price" placeholder="Amount">
+                        </div>
                     </div>
                     <div class="col-6 mb-2">
-                        <label for="name" class="form-label">Name</label>
+                        <label for="name" class="form-label fw-bold">Frirst Name</label>
                         <input type="text" class="form-control" id="name">
                     </div>
                     <div class="col-6 mb-2">
-                        <label for="lastName" class="form-label">Last Name</label>
+                        <label for="lastName" class="form-label fw-bold">Last Name</label>
                         <input type="text" class="form-control" id="lastName">
                     </div>
                     <div class="col-6 mb-2">
-                        <label for="inputCity" class="form-label">City</label>
+                        <label for="inputCity" class="form-label fw-bold">City</label>
                         <input type="text" class="form-control" id="inputCity">
                       </div>
                     <div class="col-4 mb-2">
-                        <label for="inputState" class="form-label">State</label>
+                        <label for="inputState" class="form-label fw-bold">State</label>
                         <select id="inputState" class="form-select">
-                          <option selected>Choose...</option>
-                          <option>...</option>
+                          <option selected>Pick a state...</option>
+                          <option>Texas</option>
+                          <option>Colorado</option>
                         </select>
                     </div>
                     <div class="col-2 mb-2">
-                        <label for="pCode" class="form-label">Postal code</label>
-                        <input type="text" class="form-control" id="pCode">
+                        <label for="pCode" class="form-label fw-bold">Postal code</label>
+                        <input type="number" class="form-control" id="pCode">
                     </div>
                     <div class="col-6 mb-2">
-                        <div>
+                        <div class="fw-bold">
                             <p>We accept:</p>
                         </div>
-                        <div class="d-flex bg-light rounded">
-                            <div class="form-check me-2">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                        <div class="bg-secondary rounded d-inline-flex">
+                            <div class="form-check form-check-inline me-2">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                 <label class="form-check-label" for="exampleRadios1">
                                     <i class="fa-brands fa-paypal"></i>
                                 </label>
                             </div>
-                            <div class="form-check me-2">
+                            <div class="form-check form-check-inline me-2">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
                                 <label class="form-check-label" for="exampleRadios2">
                                     <i class="fa-brands fa-cc-visa"></i>
                                 </label>
                             </div>
-                            <div class="form-check me-2">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                            <div class="form-check form-check-inline me-2">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
                                 <label class="form-check-label" for="exampleRadios4">
-                                    <i class="fa-brands fa-apple-pay"></i>
+                                    <i class="fa-brands fa-cc-apple-pay"></i>
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
                                 <label class="form-check-label" for="exampleRadios4">
-                                    <i class="fa-brands fa-google-pay"></i>
+                                    <i class="fa-brands fa-cc-amazon-pay"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 mb-2">
-                        <p>Message</p>
+                        <p class="fw-bold">Message</p>
                         <textarea class="form-control" id="myTextarea" style="height: 100px"></textarea>
                         <div id="myTextarea" class="form-text">Add any notes here.</div>   
                     </div>
